@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->dateTime('tanggal_transaksi')->useCurrent();
+            $table->date('tanggal_transaksi')->useCurrent();
             $table->string('keterangan', 70);
             $table->float('nominal');
             $table->enum('jenis_transaksi', ['pemasukan', 'pengeluaran']);
