@@ -18,6 +18,8 @@
         } else {
             document.documentElement.classList.remove('dark')
         }
+
+        
     </script>
 </head>
 <body>
